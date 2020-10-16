@@ -24,8 +24,8 @@ let s:p.inactive.middle = [ [ s:fg, s:bg0 ] ]
 let s:p.tabline.left = [ [ s:bg0, s:orange ] ]
 let s:p.tabline.tabsel = [ [ s:bg0, s:yellow ] ]
 let s:p.tabline.middle = copy(s:p.normal.middle)
-let s:p.tabline.right = [ [ s:bg0, s:purple ] ]
+let s:p.tabline.right = [ [ s:bg0, s:magenta ] ]
 let s:p.normal.error = [ [ s:red, s:bg2 ] ]
 let s:p.normal.warning = [ [ s:yellow, s:bg1 ] ]
 
-let g:lightline#colorscheme#monokaipro#palette = lightline#colorscheme#flatten(s:p)
+let g:lightline#colorscheme#monokai-pro#palette = lightline#colorscheme#flatten(s:p)
