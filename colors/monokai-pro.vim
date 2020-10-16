@@ -1747,20 +1747,5 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   " }}}
 endif
 " }}}
-" Lightline {{{
-let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
-
-let s:p.normal.left     = [ [ s:palette.bg0, s:palette.green ], [ s:palette.fg, s:palette.bg0 ] ]
-let s:p.normal.right    = [ [ s:palette.bg0, s:palette.green ], [ s:palette.fg, s:palette.bg2 ] ]
-let s:p.normal.middle   = [ [ s:palette.blue, s:palette.bg0 ] ]
-let s:p.normal.error    = [ [ s:palette.bg_red, s:palette.red, 'bold' ] ]
-let s:p.normal.warning  = [ [ s:palette.yellow, s:palette.bg0, 'bold' ] ]
-
-let s:p.insert.left     = [ [ s:palette.bg0, s:palette.purple ], [ s:palette.fg, s:palette.bg0 ] ]
-let s:p.replace.left    = [ [ s:palette.bg0, s:palette.blue ], [ s:palette.fg, s:palette.bg0 ] ]
-let s:p.visual.left     = [ [ s:palette.bg0, s:palette.orange ], [ s:palette.fg, s:palette.bg0 ] ]
-
-let g:lightline#colorscheme#monokaipro#palette = lightline#colorscheme#flatten(s:p)
-" }}}
 
 " vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker fmr={{{,}}}:
