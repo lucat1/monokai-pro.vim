@@ -1748,9 +1748,14 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
 endif
 " }}}
 " LSP: {{{
-call s:HL('LspDiagnosticsErrorSign', s:palette.none, s:palette.none, 'bold')
-call s:HL('LspDiagnosticsError', s:palette.red, s:palette.none, 'italic')
-call s:HL('LspDiagnosticsErrorFloating', s:palette.red, s:palette.none, 'italic')
+call s:HL('LspDiagnosticsError', s:palette.grey, s:palette.bg0, 'italic')
+call s:HL('LspDiagnosticsErrorSign', s:palette.red, s:palette.bg0)
+
+call s:HL('LspDiagnosticsWarning', s:palette.grey, s:palette.bg0, 'italic')
+call s:HL('LspDiagnosticsWarningSign', s:palette.yellow, s:palette.bg0)
+
+call s:HL('LspDiagnosticsInformation', s:palette.grey, s:palette.bg0, 'italic')
+call s:HL('LspDiagnosticsInformationSign', s:palette.purple, s:palette.bg0)
 " }}}
 
 
