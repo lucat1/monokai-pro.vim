@@ -1756,6 +1756,9 @@ call s:HL('LspDiagnosticsWarningSign', s:palette.yellow, s:palette.bg0)
 
 call s:HL('LspDiagnosticsInformation', s:palette.grey, s:palette.bg0, 'italic')
 call s:HL('LspDiagnosticsInformationSign', s:palette.purple, s:palette.bg0)
+
+call s:HL('LspDiagnosticsHint', s:palette.grey, s:palette.bg0, 'italic')
+call s:HL('LspDiagnosticsHintSign', s:palette.orange, s:palette.bg0)
 " }}}
 
 
