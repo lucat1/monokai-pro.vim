@@ -1747,5 +1747,11 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   " }}}
 endif
 " }}}
+" LSP: {{{
+call s:HL('LspDiagnosticsErrorSign', s:palette.none, s:palette.none, 'bold')
+call s:HL('LspDiagnosticsError', s:palette.red, s:palette.none, 'italic')
+call s:HL('LspDiagnosticsErrorFloating', s:palette.red, s:palette.none, 'italic')
+" }}}
+
 
 " vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker fmr={{{,}}}:
